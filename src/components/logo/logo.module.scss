@@ -1,0 +1,29 @@
+@import "/src/styles/variables";
+
+.logo {
+  width: fit-content;
+}
+
+.logoRow {
+  display: flex;
+  margin: 0.25rem 0;
+}
+
+.circle {
+  @include darkShadow;
+  border-radius: 100%;
+  display: inline-flex;
+  height: 1.125rem;
+  margin: 0 0.125rem;
+  width: 1.125rem;
+}
+
+.circlePink {
+  @extend .circle;
+  background-color: $pink;
+}
+
+.circleYellow {
+  @extend .circle;
+  background-color: $yellow;
+}

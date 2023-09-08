@@ -1,0 +1,24 @@
+$black: #010201;
+$pink: #fe6687;
+$purple: #7a45ff;
+$white: #ffffff;
+$yellow: #fdce68;
+
+@mixin darkShadow {
+  background-color: $black;
+  border: 0.125rem solid $black;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 0.5px 1px $black;
+  padding: 0 0 0.375rem 0rem;
+}
+
+@mixin flex($align: center, $justify: center) {
+  align-items: $align;
+  display: flex;
+  justify-content: $justify;
+}
+
+%container {
+  padding: 1.5rem;
+  min-height: 100vh;
+}
